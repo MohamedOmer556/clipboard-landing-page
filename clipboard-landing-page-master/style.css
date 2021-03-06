@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+}
+
+h2 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+p {
+  color: hsl(171, 66%, 44%);
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  line-height: 1.8rem;
+}
+button {
+  border: none;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 80%;
+}
+
+.mountain-mob {
+  display: none;
+}
+
+/* hero */
+.hero {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rem 2rem 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+.mountain {
+  position: absolute;
+  top: 0;
+}
+.hero-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-head {
+  text-align: center;
+  margin: 5rem 0 2rem;
+  width: 80%;
+}
+.hero-head h2 {
+  font-size: 2.5rem;
+}
+
+.btns {
+  margin: 2rem 0 1rem 0;
+}
+.ios {
+  background: hsl(171, 66%, 44%);
+  margin-right: 0.5rem;
+}
+.mac {
+  background: hsl(233, 100%, 69%);
+}
+
+/* snippents */
+.snippents {
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.snippents-head {
+  text-align: center;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.snippents-head h2 {
+  font-size: 2rem;
+}
+
+.computer {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-right: auto;
+}
+.computer-img img {
+  width: 95%;
+}
+.computer-cont {
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.content {
+  margin: 2rem 0;
+  text-align: left;
+  width: 55%;
+}
+.content h1 {
+  color: hsl(210, 10%, 33%);
+}
+.content p {
+  margin: 0.5rem 0;
+}
+
+/* clipboard */
+.clipboard {
+  min-height: 30vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.clip-head {
+  margin: 2rem 0;
+  width: 50%;
+}
+.clip-head h2 {
+  font-size: 2rem;
+}
+
+.clip-img img {
+  width: 100%;
+}
+
+/* workflow */
+.workflow {
+  min-height: 30vh;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.work-head {
+  margin-bottom: 3rem;
+}
+.work-head h2 {
+  font-size: 2rem;
+}
+
+.work-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.work {
+  margin: 1rem;
+  flex: 1 1 10rem;
+}
+.work img {
+  margin-bottom: 1.7rem;
+  width: 3.2rem;
+}
+.work h1 {
+  color: hsl(210, 10%, 33%);
+}
+
+/* company */
+.company {
+  min-height: 20vh;
+  padding: 0 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6rem 0 4rem 0;
+}
+
+/* platforms */
+.platforms {
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+.plat-head {
+  width: 70%;
+}
+.plat-head h1 {
+  font-size: 2rem;
+}
+
+/* footer */
+footer {
+  margin-top: 3rem;
+  min-height: 10vh;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0.4 1 30rem;
+}
+.footer-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footer-text h1 {
+  font-size: 1rem;
+  color: hsl(210, 10%, 33%);
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.footer-text h1:hover {
+  opacity: 70%;
+}
+.footer-text div {
+  margin: 0 2.5rem;
+}
+.logo {
+  margin-right: 5rem;
+}
+.logo img {
+  width: 3rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 0.4 1 0rem;
+}
+.footer-social i {
+  font-size: 2rem;
+  cursor: pointer;
+  color: hsl(210, 10%, 33%);
+  transition: all 0.5s ease;
+  opacity: 90%;
+}
+.footer-social i:hover {
+  transform: rotateZ(-360deg) translateY(-2px) scale(1.1);
+  opacity: 100%;
+}
+
+/*media*/
+@media screen and (max-width: 2000px) {
+  .computer-img img {
+    width: 105%;
+  }
+  .computer-cont {
+    margin-left: 12rem;
+  }
+  .content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1748px) {
+  .computer-img img {
+    width: 100%;
+  }
+  .computer-cont {
+    margin-left: 7rem;
+  }
+  .content {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .computer-img img {
+    width: 100%;
+  }
+  .computer-cont {
+    margin-left: 5rem;
+    margin-top: 0;
+  }
+  .content {
+    width: 80%;
+    margin: 1rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+
+  .company {
+    margin: 3rem 0;
+    min-height: 15vh;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .snippents {
+    padding: 2rem;
+  }
+  .computer {
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .computer-img {
+    width: 100%;
+  }
+
+  .computer-cont {
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .content {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+  .content p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
+  .company,
+  .workflow {
+    padding: 2rem;
+  }
+  .plat-head,
+  .snippents-head,
+  .clip-head,
+  .work-head,
+  .hero-head {
+    width: 90%;
+  }
+  .btns {
+    margin-top: 3rem;
+  }
+  .clipboard {
+    min-height: 20vh;
+    padding: 2rem;
+  }
+
+  .company {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .company img {
+    margin: 1.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 806px) {
+  footer {
+    padding: 2rem;
+  }
+  .footer-social {
+    flex: 1 1 10rem;
+  }
+  .footer-text div {
+    margin: 0 1.5rem;
+  }
+  .logo {
+    margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 784px) {
+  .work-cont {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 715px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .footer-social {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .footer-container {
+    flex: 0;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer-text h1 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  .logo {
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .ios,
+  .mac {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .plat-head,
+  .snippents-head,
+  .clip-head,
+  .work-head,
+  .hero-head {
+    width: 100%;
+  }
+  .workflow {
+    padding: 2rem;
+  }
+  .work {
+    margin: 2rem 1rem;
+  }
+  work:last-child {
+    margin: 2rem 1rem 0rem 1rem;
+  }
+  .company {
+    min-height: 5vh;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .company img {
+    margin: 2rem 1rem;
+  }
+}
